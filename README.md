@@ -4,6 +4,7 @@ Pheatmamp: TE expression(RPKM), cluster (C1-C7) is associated with developmental
 
 
 # Evolution-and-development-of-Drosophila-3D-Genome
+
 To study the role of transposable elements (TEs) in 3D genome organization in Drosophila, we measure TE expression using RNA-seq data across development in Drosophila Pseudoobscura.
 To measure the TE-expression we used standard tools/software along with custom code to produce RPKM values.
 
@@ -15,14 +16,18 @@ STAR --runMode genomeGenerate --runThreadN 4 --genomeDir ./ --genomeFastaFiles D
 
 Step2:
 mapping using star
+
 STAR --runMode alignReads --runThreadN 8 --genomeDir ./ --readFilesIn $fq1 $fq2 --sjdbGTFfile Dpse.gtf --readFilesCommand gunzip -c --outFileNamePrefix $out. --outSAMtype BAM Unsorted --winAnchorMultimapNmax 100 --outFilterMultimapNmax 100 --outFilterScoreMinOverLread 0.3 --outFilterMatchNminOverLread 0.3
 
 Step3:
 module load stringtie/2.1.1
+
 stringtie -e -B -p 4 -A tissue.gene_abund -o tissue.gtf -G Dpse.gtf tissueAligned.sort.bam
 
 Step4:
-feature count
+
+feature count:
+
 featureCounts -a Dpse.TEs.gtf -o $out $bam -t exon -f --largestOverlap -M -p --countReadPairs -T 4
 
 Step5:
