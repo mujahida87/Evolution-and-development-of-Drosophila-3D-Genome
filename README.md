@@ -1,3 +1,9 @@
+# Author: Mujahid Ali
+# Date: Oct. 17, 2024
+# Purpose: TE expression analysis
+# Ali et al. (submitted to Nature Communications)
+
+
 Pheatmamp: TE expression(RPKM), cluster (C1-C7) is associated with developmental stage 2 to testes (Tm) respectively.
 <img width="326" alt="TE expression(RPKM)" src="https://github.com/user-attachments/assets/87aa1fd7-3720-4817-a288-f6e49e0fc627">
 
