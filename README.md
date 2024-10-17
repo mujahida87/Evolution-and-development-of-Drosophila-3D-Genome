@@ -1,3 +1,4 @@
+<img width="326" alt="Screenshot 2024-10-17 at 18 02 32" src="https://github.com/user-attachments/assets/b38a97a4-df8f-429c-a8fe-24abf4608fed">
 # Evolution-and-development-of-Drosophila-3D-Genome
 To study the role of transposable elements (TEs) in 3D genome organization in Drosophila, we measure TE expression using RNA-seq data across development in Drosophila Pseudoobscura.
 To measure the TE-expression we used standard tools/software along with custom code to produce RPKM values.
