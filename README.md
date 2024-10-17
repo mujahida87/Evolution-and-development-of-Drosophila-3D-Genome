@@ -64,4 +64,8 @@ while(<IN3>){
                 print OUT "$rpkm\n";
         }
 }
+
+
+then run
+
 perl TE_RPKM.pl tissue.TE_FC.summary Dpse.TEs.gtf Hm.TE_FC tissue.TE_FC.RPKM
